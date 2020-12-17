@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'echo "build"'
         echo 'execute install#################'
-        npm install || exit 1
+        sh 'npm install || exit 1'
         echo 'execute install done#################'
       }
     }
